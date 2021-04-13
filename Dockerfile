@@ -1,8 +1,8 @@
-FROM python:3.7-alpine3.8
+FROM python:3.9.4-alpine3.13
 RUN apk add --no-cache \
     bash \
     postgresql \
     tarsnap
-RUN pip install tarsnapper==0.4.0 awscli
+RUN pip install tarsnapper==0.5.0 awscli
 ADD . /app
 WORKDIR /app
