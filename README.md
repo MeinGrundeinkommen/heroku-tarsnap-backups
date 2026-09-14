@@ -19,7 +19,7 @@ Run these commands to set up the app:
 
 Deploy the app to Heroku:
 
-    $ git push heroku master
+    $ git push heroku main
 
 Heroku assumes apps have a long-running service. This app only runs with a schedule, so we can turn that off to save money:
 
