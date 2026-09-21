@@ -1,6 +1,6 @@
-FROM ubuntu:23.04
+FROM ubuntu:26.04
 
-RUN apt update && apt install -y --no-install-recommends postgresql-client-15 wget gpg python3-pip
+RUN apt update && apt install -y --no-install-recommends postgresql-client-18 wget gpg python3-pip
 RUN wget --no-check-certificate https://pkg.tarsnap.com/tarsnap-deb-packaging-key.asc
 RUN gpg --dearmor tarsnap-deb-packaging-key.asc
 RUN mv tarsnap-deb-packaging-key.asc.gpg tarsnap-archive-keyring.gpg
